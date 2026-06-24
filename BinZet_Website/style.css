@@ -1,0 +1,42 @@
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:url('background.jpg') center/cover no-repeat fixed;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+.overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.45);
+}
+.card{
+position:relative;
+z-index:1;
+width:420px;
+max-width:90%;
+backdrop-filter:blur(12px);
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.2);
+border-radius:20px;
+padding:25px;
+text-align:center;
+color:white;
+}
+.avatar{
+width:120px;height:120px;border-radius:50%;
+object-fit:cover;
+}
+.links a{
+display:inline-block;
+margin:5px;
+padding:10px 14px;
+border-radius:10px;
+background:rgba(255,255,255,.12);
+color:white;
+text-decoration:none;
+}
